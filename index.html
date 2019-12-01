@@ -85,7 +85,6 @@
       font-size: 16px;
       position: absolute;
       padding-left: 30px;
-      width: 100%;
     }
     .input {
       background-color: rgba(255, 255, 255, 0.1);
@@ -104,8 +103,7 @@
     }
     .carousel {
       width: 100%;
-      overflow: scroll;
-      padding: 30px;
+      overflow-x: auto;
       position: relative;
     }
     .carousel__container {
@@ -113,7 +111,7 @@
       transition: 450ms -webkit-transform;
       transition: 450ms transform, 450ms -webkit-transform;
       white-space: nowrap;
-      margin: 70px 0;
+      margin: 70px 30px;
       padding-bottom: 10px;
       font-size: 0;
     }
@@ -164,6 +162,27 @@
       left: 0;
       right: 0;
       bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .carousel-item__details--img {
+      width: 20px;
+    }
+
+    .carousel-item:hover .carousel-item__details {
+      opacity: 1;
+    }
+
+    .carousel-item__details--title {
+      color: white;
+      margin: 5px 0px 0px 0px;
+    }
+
+    .carousel-item__details--subtitle {
+      color: white;
+      font-size: 8px;
+      margin: 3px 0px;
     }
     .footer {
       display: flex;
@@ -202,7 +221,7 @@
         <ul>
           <li>
             <a href="/">Cuenta</a>
-            <a href="/">Cerrar Sesión</a>
+            <a href="/login/index.html">Cerrar Sesión</a>
           </li>
         </ul>
       </div>
@@ -225,138 +244,158 @@
           <div class="carousel-item__details">
             <div>
               <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
+                class="carousel-item__details--img"
+                src="./assets/play.png"
                 alt="play"
               />
               <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
+                class="carousel-item__details--img"
+                src="./assets/add.png"
+                alt="add"
               />
             </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
           </div>
-          <p class="carousel-item__details--title">Título descriptivo</p>
-          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
         </div>
         <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Auto"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-                alt="play"
-              />
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-              />
-            </div>
-          </div>
-          <p class="carousel-item__details--title">Título descriptivo</p>
-          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                <img
+                  class="carousel-item__img"
+                  src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Auto"
+                />
+                <div class="carousel-item__details">
+                  <div>
+                    <img
+                      class="carousel-item__details--img"
+                      src="./assets/play.png"
+                      alt="play"
+                    />
+                    <img
+                      class="carousel-item__details--img"
+                      src="./assets/add.png"
+                      alt="add"
+                    />
+                  </div>
+                  <p class="carousel-item__details--title">Título descriptivo</p>
+                  <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                </div>
         </div>
         <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Auto"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-                alt="play"
-              />
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-              />
+            <img
+                class="carousel-item__img"
+                src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Auto"
+            />
+            <div class="carousel-item__details">
+                <div>
+                <img
+                    class="carousel-item__details--img"
+                    src="./assets/play.png"
+                    alt="play"
+                />
+                <img
+                    class="carousel-item__details--img"
+                    src="./assets/add.png"
+                    alt="add"
+                />
+                </div>
+                <p class="carousel-item__details--title">Título descriptivo</p>
+                <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
             </div>
-          </div>
-          <p class="carousel-item__details--title">Título descriptivo</p>
-          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
         </div>
         <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Auto"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-                alt="play"
-              />
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-              />
-            </div>
-          </div>
-          <p class="carousel-item__details--title">Título descriptivo</p>
-          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                        <img
+                          class="carousel-item__img"
+                          src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                          alt="Auto"
+                        />
+                        <div class="carousel-item__details">
+                          <div>
+                            <img
+                              class="carousel-item__details--img"
+                              src="./assets/play.png"
+                              alt="play"
+                            />
+                            <img
+                              class="carousel-item__details--img"
+                              src="./assets/add.png"
+                              alt="add"
+                            />
+                          </div>
+                          <p class="carousel-item__details--title">Título descriptivo</p>
+                          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                        </div>
         </div>
         <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Auto"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-                alt="play"
-              />
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-              />
-            </div>
-          </div>
-          <p class="carousel-item__details--title">Título descriptivo</p>
-          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                <img
+                  class="carousel-item__img"
+                  src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Auto"
+                />
+                <div class="carousel-item__details">
+                  <div>
+                    <img
+                      class="carousel-item__details--img"
+                      src="./assets/play.png"
+                      alt="play"
+                    />
+                    <img
+                      class="carousel-item__details--img"
+                      src="./assets/add.png"
+                      alt="add"
+                    />
+                  </div>
+                  <p class="carousel-item__details--title">Título descriptivo</p>
+                  <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                </div>
         </div>
         <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Auto"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-                alt="play"
-              />
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-              />
-            </div>
+        <img
+          class="carousel-item__img"
+          src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Auto"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              class="carousel-item__details--img"
+              src="./assets/play.png"
+              alt="play"
+            />
+            <img
+              class="carousel-item__details--img"
+              src="./assets/add.png"
+              alt="add"
+            />
           </div>
           <p class="carousel-item__details--title">Título descriptivo</p>
           <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+        </div>
         </div>
         <div class="carousel-item">
-          <img
-            class="carousel-item__img"
-            src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="Auto"
-          />
-          <div class="carousel-item__details">
-            <div>
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-                alt="play"
-              />
-              <img
-                src="https://img.icons8.com/flat_round/64/000000/play--v5.png"
-              />
-            </div>
+        <img
+          class="carousel-item__img"
+          src="https://images.pexels.com/photos/3156482/pexels-photo-3156482.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Auto"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              class="carousel-item__details--img"
+              src="./assets/play.png"
+              alt="play"
+            />
+            <img
+              class="carousel-item__details--img"
+              src="./assets/add.png"
+              alt="add"
+            />
           </div>
           <p class="carousel-item__details--title">Título descriptivo</p>
           <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
         </div>
-      </div>
+        </div>
     </section>
 
     <footer class="footer">
